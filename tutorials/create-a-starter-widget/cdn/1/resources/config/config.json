@@ -1,0 +1,179 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "AUTO_SCROLL",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FLOW",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0px",
+            "right": "800px",
+            "top": "0px",
+            "bottom": "500px",
+            "width": "800px",
+            "height": 520
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "heightMode": "fixed"
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "type": "ROW",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "width": 3,
+            "height": "500px"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "heightMode": "fit",
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 3,
+            "width": 9,
+            "height": "100.00%"
+          },
+          "widgetId": "widget_3",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        }
+      }
+    },
+    "layout_2": {
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.10.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankscrollable",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/layout/row/",
+      "version": "1.10.0",
+      "label": "Block",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "id": "widget_1",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_1"
+        }
+      }
+    },
+    "widget_2": {
+      "uri": "widgets/starter-widget/",
+      "version": "1.10.0",
+      "config": null,
+      "id": "widget_2"
+    },
+    "widget_3": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.10.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false
+      },
+      "id": "widget_3",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_2"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "LA Parks and Trails Map Default",
+      "itemId": "eb1be6543e304b4d81ed55439c412c2c",
+      "portalUrl": "https://prof-services.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://prof-services.maps.arcgis.com"
+  },
+  "sharedThemeVariables": {
+    "header": {},
+    "body": {},
+    "button": {},
+    "logo": {
+      "small": null,
+      "link": null
+    }
+  },
+  "originExbVersion": "1.10.0",
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "timestamp": 1667486360874
+}

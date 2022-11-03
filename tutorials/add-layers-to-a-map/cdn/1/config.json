@@ -9,7 +9,7 @@
       },
       "isDefault": true,
       "isVisible": true,
-      "label": "Page 1"
+      "label": "Page"
     }
   },
   "layouts": {
@@ -19,12 +19,12 @@
         "0": {
           "type": "WIDGET",
           "bbox": {
-            "left": "191px",
-            "right": "591px",
-            "top": "0px",
-            "bottom": "400px",
-            "width": "400px",
-            "height": 420
+            "left": "0px",
+            "right": "800px",
+            "top": "27px",
+            "bottom": "527px",
+            "width": "800px",
+            "height": 520
           },
           "widgetId": "widget_1",
           "setting": {
@@ -40,28 +40,29 @@
       "type": "ROW",
       "label": "Default",
       "order": [
-        "1",
-        "0"
+        "0",
+        "1"
       ],
       "content": {
         "0": {
           "type": "WIDGET",
           "bbox": {
-            "left": 3,
-            "width": 9,
-            "height": "400px"
+            "left": 0,
+            "width": 3,
+            "height": "560px"
           },
-          "widgetId": "widget_2",
+          "widgetId": "widget_4",
           "setting": {
-            "heightMode": "fit"
+            "heightMode": "fit",
+            "maintainedByLayout": true
           }
         },
         "1": {
           "type": "WIDGET",
           "bbox": {
-            "left": "0px",
-            "width": "3px",
-            "height": "398px"
+            "left": 3,
+            "width": 9,
+            "height": "400px"
           },
           "widgetId": "widget_3",
           "setting": {
@@ -81,28 +82,19 @@
       "label": "Default",
       "order": [
         "0",
-        "1",
+        "3",
         "2"
       ],
       "content": {
         "0": {
           "type": "WIDGET",
           "bbox": {
-            "width": "308px",
-            "height": "70px"
-          },
-          "widgetId": "widget_4",
-          "setting": {
-            "autoProps": {
-              "height": "AUTO"
-            }
-          }
-        },
-        "1": {
-          "type": "WIDGET",
-          "bbox": {
-            "width": "308px",
-            "height": "398px"
+            "left": "0px",
+            "right": "318px",
+            "top": "0px",
+            "bottom": "40px",
+            "width": "318px",
+            "height": "40px"
           },
           "widgetId": "widget_5",
           "setting": {
@@ -115,9 +107,17 @@
           "type": "WIDGET",
           "bbox": {
             "width": "308px",
-            "height": "398px"
+            "height": "400px"
           },
-          "widgetId": "widget_6",
+          "widgetId": "widget_6"
+        },
+        "3": {
+          "type": "WIDGET",
+          "bbox": {
+            "width": "308px",
+            "height": "498px"
+          },
+          "widgetId": "widget_7",
           "setting": {
             "autoProps": {
               "height": "AUTO"
@@ -127,7 +127,7 @@
       }
     }
   },
-  "exbVersion": "1.6.0",
+  "exbVersion": "1.10.0",
   "mainSizeMode": "LARGE",
   "theme": "themes/default/",
   "forBuilderAttributes": {
@@ -137,8 +137,8 @@
   "widgets": {
     "widget_1": {
       "uri": "widgets/layout/row/",
-      "version": "1.6.0",
-      "label": "Block 1",
+      "version": "1.10.0",
+      "label": "Block",
       "config": {
         "space": 10,
         "style": {
@@ -157,12 +157,12 @@
         }
       }
     },
-    "widget_2": {
+    "widget_3": {
       "uri": "widgets/arcgis/arcgis-map/",
-      "version": "1.6.0",
-      "label": "Map 1",
+      "version": "1.10.0",
+      "label": "Map",
       "config": {
-        "toolConifg": {
+        "toolConfig": {
           "canZoom": true,
           "canHome": true,
           "canSearch": true,
@@ -170,7 +170,7 @@
         },
         "isUseCustomMapState": false
       },
-      "id": "widget_2",
+      "id": "widget_3",
       "layouts": {
         "MapFixedLayout": {
           "LARGE": "layout_2"
@@ -183,10 +183,11 @@
         }
       ]
     },
-    "widget_3": {
+    "widget_4": {
+      "id": "widget_4",
       "uri": "widgets/layout/column/",
-      "version": "1.6.0",
-      "label": "Column 1",
+      "version": "1.10.0",
+      "label": "Column",
       "config": {
         "space": 10,
         "style": {
@@ -200,53 +201,42 @@
           "alignItems": "stretch"
         }
       },
-      "id": "widget_3",
       "layouts": {
         "DEFAULT": {
           "LARGE": "layout_3"
         }
       }
     },
-    "widget_4": {
+    "widget_5": {
       "uri": "widgets/common/text/",
-      "version": "1.6.0",
-      "label": "Text 1",
+      "version": "1.10.0",
+      "label": "Text",
       "config": {
-        "text": "<p><span style=\"font-size: 24px;\">Add Layers to a Map</span></p>",
+        "text": "<p><span style=\"font-size: 24px;\">A Layers to a Map</span></p>",
         "style": {
           "verticalAlign": "start",
           "wrap": true
         }
       },
-      "id": "widget_4"
-    },
-    "widget_5": {
-      "uri": "widgets/add-layers-to-a-map/",
-      "version": "1.6.0",
-      "label": "add-layers-to-a-map 1",
-      "config": {},
-      "id": "widget_5",
-      "useMapWidgetIds": [
-        "widget_2"
-      ]
+      "id": "widget_5"
     },
     "widget_6": {
       "uri": "widgets/arcgis/legend/",
-      "version": "1.6.0",
-      "label": "Legend 1",
-      "config": {
-        "cardStyle": false,
-        "style": {
-          "useCustom": true,
-          "background": {
-            "color": "rgba(0,0,0,0)",
-            "fillType": "fill"
-          }
-        }
-      },
+      "version": "1.10.0",
+      "label": "Legend",
+      "config": {},
       "id": "widget_6",
       "useMapWidgetIds": [
-        "widget_2"
+        "widget_3"
+      ]
+    },
+    "widget_7": {
+      "uri": "widgets/add-layers-to-a-map/",
+      "version": "1.10.0",
+      "config": {},
+      "id": "widget_7",
+      "useMapWidgetIds": [
+        "widget_3"
       ]
     }
   },
@@ -258,6 +248,7 @@
     "dataSource_1": {
       "id": "dataSource_1",
       "type": "WEB_MAP",
+      "sourceLabel": "LA Parks and Trails Map Default",
       "itemId": "eb1be6543e304b4d81ed55439c412c2c",
       "portalUrl": "https://prof-services.maps.arcgis.com"
     }
@@ -265,9 +256,12 @@
   "messageConfigs": {},
   "attributes": {
     "portalUrl": "https://prof-services.maps.arcgis.com",
+    "isWebTier": false,
     "clientId": "",
     "title": "Add Layers to a Map",
-    "description": ""
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": null
   },
   "sharedThemeVariables": {
     "header": {},
@@ -278,10 +272,11 @@
       "link": null
     }
   },
+  "originExbVersion": "1.10.0",
   "pageStructure": [
     {
       "page_0": []
     }
   ],
-  "timestamp": 1633641745832
+  "timestamp": 1667487893248
 }
