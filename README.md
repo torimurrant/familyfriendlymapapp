@@ -1,29 +1,3 @@
-# Overview - V1.12
-
-This repository provides samples for widgets and themes built with ArcGIS Experience Builder. Learn more about [ArcGIS Experience Builder SDK](https://developers.arcgis.com/experience-builder/guide/core-concepts/).
-
-## Features
-- [Theme samples](themes)
-- [Widget samples](widgets)
-
-## Instructions
-Clone the repo into the `client/sdk-sample` folder
-```sh
-cd client
-git clone git@github.com:Esri/arcgis-experience-builder-sdk-resources.git sdk-sample
-```
-
-## Requirements
-
-## Resources
-* [ArcGIS Experience Builder Developer Guide](https://developers.arcgis.com/experience-builder/)
-* [Widget Development](https://developers.arcgis.com/experience-builder/guide/getting-started-widget/)
-* [Theme Development](https://developers.arcgis.com/experience-builder/guide/theme-development/)
-
-## Issues
-Find a bug or want to request a new feature? Please let us know by submitting an issue.
-
-
 ## Licensing
 Copyright 2023 Esri
 
